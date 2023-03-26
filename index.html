@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Canvas with SQLite on Browser</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/jquery-1.12.0.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="form">
+  <h1>SQLite Board</h1>
+  <form id="my-contact">
+    <input type="hidden" id="article-id" value="" />
+    <fieldset>
+      <legend>게시판</legend>
+      <ol id="field-list">
+        <li>
+          <label for="user-name">
+            이름 :
+            <input required autofocus type="text" id="user-name" placeholder="Your Name" />
+          </label>
+        </li>
+        <li>
+          <label for="article-content">
+            내용 :
+            <input required type="text" id="article-content" placeholder="Article Content" />
+          </label>
+        </li>
+      </ol>
+    </fieldset>
+    <div class="button-set">
+      <span id="button-reset" class="button">글 지우기</span>
+      <span id="button-insert" class="button">글 쓰기</span>
+      <span id="button-update" class="button">글 수정</span>
+      <span id="button-drop" class="button">DB 삭제</span>
+    </div>
+  </form>
+</div>
+<div id="board-list" class="board-list">list</div>
+<script src="js/main.js"></script>
+</body>
+</html>
